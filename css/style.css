@@ -8,7 +8,7 @@
   /*========== Colors ==========*/
   --first-color: #141e30;
   --first-color-alt: #ababab;
-  --title-color: #ababab;
+  --title-color: #ffffff;
   --text-color: #707070;
   --text-color-light: #a6a6a6;
   --body-color: #fbfefd;
@@ -132,7 +132,7 @@ img {
 
 /*===== SECTION CSS =======*/
 .section {
-  padding: 4rem 0 2rem;
+  padding: 5rem 0 5rem;
 }
 
 .section-title,
@@ -151,6 +151,27 @@ img {
   color: var(--first-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
+}
+
+.section-title-about {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  color: var(--first-color-alt);
+  margin-bottom: var(--mb-3);
+}
+
+.section-title-menu {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  color: var(--first-color-alt);
+  margin-bottom: var(--mb-3);
+}
+
+.section-title-contact {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  color: var(--first-color-alt);
+  margin-bottom: var(--mb-3);
 }
 
 /*======= LAYOUT =======*/
@@ -203,7 +224,7 @@ img {
 
 .nav_link,
 .nav_logo {
-  color: var(--title-color);
+  color: var(--first-color-alt);
   font-weight: var(--font-medium);
 }
 
@@ -232,7 +253,7 @@ img {
 
 /*======== HOME ========*/
 .home {
-  background: #fffff7;
+  background: #8e8e8e;
 }
 .home_container {
   height: calc(100vh - var(--header-height));
@@ -243,6 +264,7 @@ img {
   font-size: var(--biggest-font-size);
   color: var(--first-color);
   margin-bottom: var(--mb-1);
+  line-height: 1.2em;
 }
 
 .home_subtitle {
@@ -289,7 +311,7 @@ img {
 
 /*======== SERVICES ========*/
 .services {
-  background: #fffff7;
+  background: #8e8e8e;
 }
 .services_container {
   row-gap: 2.5rem;
@@ -313,6 +335,7 @@ img {
 }
 
 .services_description {
+  color: var(--title-color);
   padding: 0 1.5rem;
 }
 
@@ -392,7 +415,7 @@ img {
 
 /*========= FOOTER =========*/
 .footer {
-  background: #fffff7;
+  background: #8e8e8e;
 }
 
 .footer_section {
@@ -411,6 +434,7 @@ img {
 .footer_description {
   display: block;
   font-size: var(--small-font-size);
+  color: var(--title-color);
   margin: 0.25rem 0 var(--mb-3);
 }
 
@@ -433,12 +457,16 @@ img {
 
 .footer_link {
   display: inline-block;
-  color: var(--text-color);
+  color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
 
 .footer_link:hover {
   color: var(--first-color);
+}
+
+.footer_content ul li {
+  color: var(--title-color);
 }
 
 .footer_copy {
@@ -483,10 +511,6 @@ img {
 @media screen and (min-width: 760px) {
   body {
     margin: 0;
-  }
-
-  .section {
-    padding-top: 8rem;
   }
 
   .nav {
